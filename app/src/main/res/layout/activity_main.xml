@@ -12,14 +12,18 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@drawable/logo" />
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:src="@drawable/logo2"
+            tools:visibility="visible" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -29,7 +33,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btntakephoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -45,7 +49,7 @@
             android:text="Nombre" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -61,7 +65,7 @@
             android:text="Telefono" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/telefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -77,7 +81,7 @@
             android:text="Latitud" />
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/latitud"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -93,7 +97,7 @@
             android:text="Longitud" />
 
         <EditText
-            android:id="@+id/editTextText4"
+            android:id="@+id/longitud"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -101,14 +105,14 @@
             android:inputType="text" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnsavecontact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:text="Guardar Contacto" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnlistcontact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"

@@ -1,4 +1,4 @@
-package Config;
+package com.example.pm2exameng3.Config;
 
 public class Personas {
     private String id;
