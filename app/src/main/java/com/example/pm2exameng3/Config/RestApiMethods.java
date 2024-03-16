@@ -1,4 +1,4 @@
-package Config;
+package com.example.pm2exameng3.Config;
 
 public class RestApiMethods {
     public static final String EndpointPostPerson = "http://192.168.1.36/pm2exaapiperson/createperson.php";
