@@ -62,7 +62,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.restapim01.fileprovider"
+            android:authorities="com.example.pm2exameng3.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
