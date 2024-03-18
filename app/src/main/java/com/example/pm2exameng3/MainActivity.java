@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     //Creaccion de las variables
     ImageView imageView2;
     Button btnfoto, btncreate, btncontacts;
-    String Path;
+    String currentPhotoPath;;
     EditText nombres, telefono, latitud, longitud, foto;
 
     private FusedLocationProviderClient fusedLocationClient;
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
         personas.setTelefono(telefono.getText().toString());
         personas.setLatitud(latitud.getText().toString());
         personas.setLongitud(longitud.getText().toString());
-        personas.setFoto(ConvertImageBase64(Path));
+        personas.setFoto(ConvertImageBase64(currentPhotoPath));
 
         JSONObject jsonObject = new JSONObject();
 
@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
         );
 
         // Save a file: path for use with ACTION_VIEW intents
-        Path = image.getAbsolutePath();
+        currentPhotoPath = image.getAbsolutePath();
         return image;
     }
 
@@ -274,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == REQUEST_IMAGE) {
             try {
-                File Foto = new File(Path);
+                File Foto = new File(currentPhotoPath);
                 imageView2.setImageURI(Uri.fromFile(Foto));
             } catch (Exception ex) {
                 ex.toString();

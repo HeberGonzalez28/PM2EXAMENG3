@@ -85,6 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
+            android:enabled="false"
             android:ems="10"
             android:inputType="text" />
 
@@ -101,6 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
+            android:enabled="false"
             android:ems="10"
             android:inputType="text" />
 
@@ -109,6 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
+            android:editable="false"
             android:text="Guardar Contacto" />
 
         <Button
